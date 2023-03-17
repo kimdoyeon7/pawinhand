@@ -12,9 +12,10 @@ $padding50:50px 0;
 // @mixin 생성규칙명
 // @include 호출규칙명
 @mixin layout { //컨텐츠 크기+가운데정렬
-    margin:0 auto;
-    width:1200px;
-
+    margin:0 auto; overflow-x:hidden;
+    width:calc(100% - 30px);
+    max-width:1200px;
+    min-width:320px;
 } 
 @mixin flex-row-between {
     display:flex; flex-flow:row nowrap;
@@ -135,3 +136,10 @@ footer {
     background-color: $bg3-dark;
     color:$font-color2-wh;
 }
+
+//media quree
+// @media screen and (max-width:1024px) {
+//     #header_bg {
+//         header {background: coral;}
+//     }
+// }
