@@ -1,0 +1,123 @@
+#header_bg {
+  background-color: #eee;
+}
+#header_bg header {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: aqua;
+  height: 70px;
+}
+#header_bg header nav {
+  background-color: yellow;
+}
+#header_bg header nav a {
+  margin-left: 16px;
+}
+#header_bg header nav a:first-child {
+  margin-left: 0;
+}
+
+#slide_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+#slide_wrap .slide_container {
+  position: relative;
+}
+#slide_wrap .slide_container .slide {
+  display: none;
+}
+#slide_wrap .slide_container .slide1 {
+  display: block;
+}
+#slide_wrap .prev, #slide_wrap .next {
+  position: absolute;
+}
+#slide_wrap .prev {
+  top: 50%;
+  left: 20px;
+}
+#slide_wrap .next {
+  top: 50%;
+  right: 20px;
+}
+#slide_wrap .pagenation {
+  background: yellow;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+#slide_wrap .pagenation a {
+  background: #ccc;
+  text-indent: -9999px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+#slide_wrap .pagenation a.active {
+  background: #fff;
+}
+#slide_wrap .pagenation a:last-child {
+  margin: 0;
+}
+
+#gallery_wrap {
+  background: lime;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 50px 0;
+}
+#gallery_wrap .gallery {
+  width: 100px;
+  height: 100px;
+}
+#gallery_wrap .gallery img {
+  width: 100%;
+}
+#gallery_wrap .g5 {
+  width: 200px;
+  height: 200px;
+}
+
+#bnr_wrap {
+  background-color: yellow;
+  padding: 50px 0;
+  text-align: center;
+}
+#card_wrap {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+#card_wrap .card {
+  background-color: #eee;
+  width: 20%;
+  padding: 30px 20px;
+}
+#card_wrap .card .photo img {
+  width: 100%;
+}
+#card_wrap .card h2 {
+  margin-top: 10px;
+}
+#card_wrap .card p {
+  margin-top: 10px;
+  line-height: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
