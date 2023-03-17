@@ -22,7 +22,7 @@ $padding50:50px 0;
 }
 @mixin flex-column-between {
     display:flex; flex-flow:column wrap;
-    justify-content:space-between; align-items:center;
+    justify-content:space-between;
 }
 
 // 실행
@@ -83,22 +83,55 @@ $padding50:50px 0;
     .g5 {width:200px; height:200px;}
 }//e:gallery_wrap
 #bnr_wrap {
-    background-color: yellow;
+    background:$bg3-dark;
     padding:$padding50;
     text-align:center;
-    span{}
+    span{color:$font-color2-wh;}
 }//e:bnr_wrap
 #card_wrap{
-    // background: plum;
+    background: plum;
     @include layout;
     @include flex-row-between;
     padding:$padding50;
     .card {
         background-color: $bg1-light;
-        width:20%; padding:30px 20px;
+        padding:30px 20px; width:23.5%;// (100-6)/4 
+        * {padding-bottom:20px; line-height:1.2rem;}
         .photo {}
-        .photo img {width:100%;}
-        h2 {margin-top:10px;}
-        p {margin-top:10px; line-height:1.2rem;}
+            img {width:100%;}
+        h2 {}
+        p {}
+        p:last-child {padding:0;}
     }
+}//e:card_wrap
+#qa_wrap {
+    background-color: pink;
+    @include layout;
+    @include flex-column-between;
+    padding:$padding50;
+    display:block;
+    // * {padding-bottom:20px;}
+    h2 {margin-bottom:20px; font-size:1.375rem;}
+    #qaFrm {
+        fieldset {
+            * {padding:10px; background:$bg1-light; border:0; margin-bottom:16px;}
+            @include flex-column-between;
+            input[name$=id] {}
+            input[name$=number] {}
+            #user_qa {height:200px;}
+            #qa_btn {
+                background-color:$bg3-dark;
+                color:$font-color2-wh;
+                margin:0;
+                text-align:center;
+                padding:20px 0;
+            }
+        }
+    }
+}//e:qa_wrap
+footer {
+    text-align:center;
+    padding:$padding50;
+    background-color: $bg3-dark;
+    color:$font-color2-wh;
 }
